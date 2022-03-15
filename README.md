@@ -1,1 +1,1 @@
-# Latex-Resume
+# Deedy - CV - Resume
