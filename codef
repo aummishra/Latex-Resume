@@ -1,0 +1,225 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Aum}{Mishra}{ 
+%\urlstyle{same}\href{http://debarghyadas.com}{debarghyadas.com}| \href{http://fb.co/dd}{fb.co/dd}\\
+\href{mailto:aum0912mishra@gmail.com}{aum0912mishra@gmail.com} | [+91] 6264833279 \\
+%\href{mailto:dd367@cornell.edu}{dd367@cornell.edu}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t][18cm]{0.33\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{IET , DAVV  INDORE }
+\descript{B.E Electronics and Telecommunication}\\
+ \location{3RD YEAR UNDERGRADUATE}\\
+ {CGPA : 7.53/10}\\
+{July 2019 -  Present}
+\sectionsep
+
+\subsection{JAWAHAR LAL NEHRU SCHOOL}
+\descript{12th Standard Examination (CBSE )}\\
+{Percentage : 79.8\%}\\
+{2018 |Bhopal, MP}\\
+\descript{10th Standard Examination (CBSE )}\\
+{CGPA : 8.6/10}\\
+{2016 |Bhopal, MP}\\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/aummishra}{\bf aummishra} \\
+LinkedIn://  \href{https://www.linkedin.com/in/aum-mishra-6602a51a1/}{\bf Aum Mishra} \\
+Leetcode://  \href{https://leetcode.com/Aux1m/}{\bf Aux1m} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Skills}
+\subsection{Programming}
+\textbullet{}\  C++ \textbullet{}   C \textbullet{} JAVA \textbullet{} HTML/CSS \\
+\textbullet{} XML \textbullet{} MySQL \textbullet{} Solidity \\
+\location{Familiar:}
+\textbullet{}  Git \textbullet{}  Github \textbullet{}  MS Excel\\
+\textbullet{} Adobe Photoshop \textbullet{} GCP : Core \textbullet{}Canva\textbullet{} Latex \\
+\sectionsep
+
+\subsection{Soft Skills}
+\item\textbullet{}  Healthy team spirit and ability to lead a Team.
+\item \textbullet{} Good communication and Management skills
+\item \textbullet{}  The ability to work under pressure and multitask\\
+\location{Languages known:}
+ \textbullet{} English \textbullet{} Hindi \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Graduate}
+Data Structures & Algorithms \\
+Computer Networks & Architecture \\
+Discrete Mathematics \\
+Object Oriented Programming\\
+Operating Systems \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t][18cm]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Work Experience}
+\runsubsection{CROPSLY}
+\descript{| Android Development Engineer }
+\location{March 2022 - Present }
+\vspace{\topsep} 
+\begin{tightemize}
+\item  Respond to client needs for applications with an eye to the most feasible and effective solutions.
+\item  Coordinate with team members to create client apps in a coordinated and timely manner.
+\item  Optimize the interfacing of the apps with a variety of systems to ensure flexible and agile use.\\
+\item \location{Technology used:} Java,XML,Git.\\
+
+\end{tightemize}
+
+\sectionsep
+
+\runsubsection{Woovly}
+\descript{| City Team Leader }
+\location{February 2020 – May 2020 | Indore, MP}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Managed a team of more than 50+ People and conducted offline campaigns.
+\item Developed the app store rating optimization strategy, including keyword analysis, creative testing and effective reporting that would help drive organic app growth.
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection {Android News App}
+\descript{|  XML, JAVA, REST API, RETROFIT} 
+\faicon{github} \textbf{\href{https://github.com/aummishra/News-App}{Link}}
+
+\item \textbullet{} Made a News service app that lets users to get multiple worldclass news   services at a single place using XML & Java .The Data is fetched from REST API using Retrofit object. Implemented an algorithm which lets user to browse through different news category sections and also share it using different messaging apps.
+\sectionsep
+
+\runsubsection{Transaction Management Application}
+\descript{|C++, STL}
+\faicon{github} \textbf{\href{https://github.com/aummishra/Bank-Management-System}{Link}}
+\item \textbullet{} Designed a banking transaction system using C++ to simulate the common functions of using a bank accounts. Implemented Objected - oriented programming practices such to create different account type and data bases
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Achievements} 
+\item \textbullet{} State rank \textbf{5} in \textbf{State Level Senior Science Olympiad} 2015.
+\item \textbullet{} \textbf{3} star on \textbf{Codechef}, \textbf{3} star on \textbf{Leetcode}.
+\item \textbullet{} \textbf{1K+} Views on Leetcode Articles.
+\item \textbullet{} Solved \textbf{300+} Problems on various coding platforms.
+\item \textbullet{} Winners of \textbf{National Entrepreneurship Challenge 2021, IIT Bombay} .
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Position of Responsibility} 
+\item \textbullet{} \textbf{Training and Placement Coordinator} at \textbf{IET, DAVV}.
+\item \textbullet{} \textbf{Content Team Head} at \textbf{E-Cell, IET - DAVV}.
+\item \textbullet{} \textbf{Volunteer}, \textbf{Aakshank} - Annual Cultural Festival of \textbf{IET-  DAVV}
+\item \textbullet{} \textbf{Core committee member} of Cultural club \textbf{Taksh, IET-DAVV}.
+\end{minipage} 
+\end{document}  \documentclass[]{article}
