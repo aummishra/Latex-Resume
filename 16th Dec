@@ -1,0 +1,184 @@
+%-------------------------
+% Resume in Latex
+% Author : Aum Mishra
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome} % FontAwesome v4
+\usepackage{hyperref}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}
+  {\vspace{-6pt}\scshape\raggedright\large}
+  {}{0em}{}
+  [\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{4pt}
+  \noindent
+  \hspace{0.6em} % indent subheading slightly
+  \begin{tabular*}{0.96\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textbf{#2} \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}
+  \vspace{2pt}
+}
+\newcommand{\resumeEduSubheading}[4]{
+  \noindent
+  \hspace{0.6em}
+  \begin{tabular*}{0.96\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textbf{#2} \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}
+  \vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{
+  \begin{itemize}[leftmargin=*, itemsep=6pt, topsep=4pt]
+}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{
+  \begin{itemize}[
+    leftmargin=2em,
+    itemsep=2pt,
+    topsep=2pt,
+    parsep=0pt
+  ]
+}
+\newcommand{\resumeItemListEnd}{
+  \end{itemize}
+}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+    {\Huge \textbf{\href{https://www.linkedin.com/in/aum-mishra-6602a51a1/}{Aum Mishra}}}\\[10pt]
+
+    {\small
+    \faEnvelopeO\; 
+    \href{mailto:aum0912mishra@gmail.com}{aum0912mishra@gmail.com}
+    \quad
+    \faPhone\; 6264833279
+    \quad
+    \faLinkedinSquare\;
+    \href{https://www.linkedin.com/in/aum-mishra-6602a51a1/}{linkedin.com/aummishra}
+    \quad
+    \faCode\;
+    \href{https://leetcode.com/u/Aux1m/}{leetcode.com/AumMishra}
+    }
+\end{center}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+
+    \resumeSubheading
+      {Principal Global Services}{Pune, Maharashtra}
+      {Software Engineer}{July, 2024 - Present}
+      \resumeItemListStart
+\item[\textbullet] Designed and implemented highly scalable, low-latency RESTful microservices and full-stack features for payment systems processing millions of transactions, leveraging loosely coupled architectures and IaC to improve performance, reliability, and deployment consistency.
+\item[\textbullet] Automated horizontal scaling of Database read replicas around pay cycles and implemented database indexing strategies, improving query performance and reducing resource utilisation by 25-30\%.
+\item[\textbullet] Optimized application by identifying bottlenecks across the stack, improving API response times by 35\%, enhancing Lambda functions to efficiently handle high-traffic and multi-parameter requests.
+\item[\textbullet] Led end-to-end migration of RDS transactional data to Snowflake by designing AWS Glue ETL pipelines supporting historical and daily delta loads, reducing processing time by 80\% to 90\%, eliminating legacy jobs, and achieved 100\% data accuracy with zero downtime.
+\item[\textbullet] Identified and resolved critical security vulnerabilities across frontend and backend systems, handled defect resolution end-to-end, mitigated payout impacts during sch
+\item \textbf{Tech used:} AWS, Java, SpringBoot, Typescript, ReactJs, Node.js, Microservices, REST APIs, PostgreSQL, MongoDB, Snowflake.
+\resumeItemListEnd
+
+     \resumeSubheading
+      {Principal Global Services}{Pune, Maharashtra}
+      {Trainee Engineer}{July, 2023 - July, 2024}
+      \resumeItemListStart
+     \item[\textbullet] Modernized the UI application by upgrading to enterprise React component libraries and building reusable components. Increasing accessibility score by 67\%, and resolving critical UI defects to improve user experience.
+     \item[\textbullet] Designed and implemented a Balance and Control systen to detect transaction leakage across payment systems by adding multi-layer validations and reconciliation reports for incoming and outgoing transactions.
+     \item \textbf{Tech used:} AWS, Typescript, ReactJs, Node.js, Java, SpringBoot, Microservices, MongoDB
+     \resumeItemListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+    \item{
+     {C++, Java, Javascript, Node.js, Express.js, Typescript, Python, React, Redux, HTML, CSS, Spring Boot, Microservices, Unit Testing, Data Structures \& Algorithms, REST APIs, MongoDB, PostgreSQL, AWS, Docker, Postman, Git, Agile/Scrum, CI/CD, Design patterns, LLM, GenAI}
+    }
+ \resumeSubHeadingListEnd
+%-------------------------------------------
+%---------EDUCATION-----------
+\section{Education}
+\vspace{-4pt}
+
+\resumeEduSubheading
+  {Institute of Engineering and Technology DAVV}{Indore, Madhya Pradesh}
+  {BE in Electronics and Telecommunication Engineering; CGPA: 8}{2019 -- 2023}
+
+\vspace{4pt}
+
+\resumeEduSubheading
+  {Jawahar Lal Nehru School, BHEL}{Bhopal, Madhya Pradesh}
+  {12th Standard, CBSE; Percentage: 82}{2018}
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Classification of Trash Based On Recyclability Status (Jan, 2017 – Apr, 2017)}
+      {Developed a project (achieving 88\% accuracy), whose objective was to take images of a single piece of garbage and classify it into five classes- glass, leather, paper, plastic and metal using Computer Vision(CV) approach and Machine Learning, using Python. Used SIFT for feature extraction, K-means clustering for grouping and SVM for classification)}
+    \resumeSubItem{Student and Teacher Attendance Manager}
+      {Developed an android app for taking attendance of both students (by teachers) and teachers (By Admins). Used JAVA and XML with SQLite as database.}
+  \resumeSubHeadingListEnd
+  
+  %-----------PROJECTS-----------------
+\section{Achievements and Responsibilities}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Global Leaderboard rank – 87 @ {\href{https://www.interviewbit.com}{InterviewBit}} }
+      {Profile -{\href{https://www.interviewbit.com/profile/slrparser}{https://www.interviewbit.com/profile/slrparser}} {\href{https://www.interviewbit.com}{InterviewBit}} is a reputed website to test your Data Structures, Algorithms and Coding Skills. I am currently ranked 87 globally, among a pool of more than 2.5 lakh users}
+    \resumeSubItem {1st position}
+      {In Blindcoding , TechSpardha(College Technical Fest) (10/2014 – 10/2014). Blindcoding is an annual event where programming questions have to be solved, with computer screen getting turned off every 5 minutes.}
+  \resumeSubHeadingListEnd
+
+%
+\end{document}
