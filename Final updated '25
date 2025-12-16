@@ -1,0 +1,181 @@
+%-------------------------
+% Resume in Latex
+% Author : Aum Mishra
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome} % FontAwesome v4
+\usepackage{hyperref}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}
+  {\vspace{-6pt}\scshape\raggedright\large}
+  {}{0em}{}
+  [\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{4pt}
+  \noindent
+  \hspace{0.6em} % indent subheading slightly
+  \begin{tabular*}{0.96\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textbf{#2} \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}
+  \vspace{2pt}
+}
+\newcommand{\resumeEduSubheading}[4]{
+  \noindent
+  \hspace{0.6em}
+  \begin{tabular*}{0.96\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textbf{#2} \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}
+  \vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{
+  \begin{itemize}[leftmargin=*, itemsep=6pt, topsep=4pt]
+}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{
+  \begin{itemize}[
+    leftmargin=2em,
+    itemsep=2pt,
+    topsep=2pt,
+    parsep=0pt
+  ]
+}
+\newcommand{\resumeItemListEnd}{
+  \end{itemize}
+}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+    \vspace{-12pt}
+    {\Huge \textbf{\href{https://www.linkedin.com/in/aum-mishra-6602a51a1/}{Aum Mishra}}}\\[6pt]
+
+    {\small
+    \faEnvelopeO\; 
+    \href{mailto:aum0912mishra@gmail.com}{aum0912mishra@gmail.com}
+    \quad
+    \faPhone\; 6264833279
+    \quad
+    \faLinkedinSquare\;
+    \href{https://www.linkedin.com/in/aum-mishra-6602a51a1/}{linkedin.com/aummishra}
+    \quad
+    \faCode\;
+    \href{https://leetcode.com/u/Aux1m/}{leetcode.com/AumMishra}
+    }
+\end{center}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+
+    \resumeSubheading
+      {Principal Global Services}{Pune, Maharashtra}
+      {Software Engineer}{July, 2024 - Present}
+      \resumeItemListStart
+\item[\textbullet] Designed and implemented highly scalable, low-latency \textbf{RESTful microservices} and full-stack features for payment systems processing millions of transactions, leveraging loosely coupled architectures and \textbf{IaC} to improve performance, reliability, and deployment consistency.
+\item[\textbullet] Automated horizontal scaling of Database read replicas around pay cycles and implemented database indexing strategies, improving query performance and reducing resource utilisation by \textbf{25-30\%}.
+\item[\textbullet] Optimized application by identifying bottlenecks across the stack, improving API response times by \textbf{35\%}, enhancing Lambda functions to efficiently handle high-traffic and multi-parameter requests.
+\item[\textbullet] Led end-to-end migration of RDS transactional data to Snowflake by designing AWS Glue ETL pipelines supporting historical and daily delta loads, reducing processing time by \textbf{80\% to 90\%}, eliminating legacy jobs, and achieved \textbf{100\%} data accuracy with zero downtime.
+\item[\textbullet] Identified and resolved critical security vulnerabilities across frontend and backend systems, handled defect resolution end-to-end, mitigated payout risks during scheduled cycles, conducted root-cause analysis, and proactively prevented production issues.
+\item \textbf{Tech used:} AWS, Java, Spring Boot, Typescript, React.js, Node.js, Microservices, REST APIs, PostgreSQL, MongoDB, Snowflake.
+\resumeItemListEnd
+
+     \resumeSubheading
+      {Principal Global Services}{Pune, Maharashtra}
+      {Trainee Engineer}{July, 2023 - July, 2024}
+      \resumeItemListStart
+     \item[\textbullet] Modernized the UI application by upgrading to enterprise React component libraries and building reusable components. Increasing accessibility score by \textbf{67\%}, and resolving critical UI defects to improve user experience.
+     \item[\textbullet] Designed and implemented a Balance and Control systen to detect transaction leakage across payment systems by adding multi-layer validations and reconciliation reports for incoming and outgoing transactions.
+     \item \textbf{Tech used:} AWS, Typescript, React.js, Node.js, Java, Spring Boot, Microservices, MongoDB
+     \resumeItemListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+    \item{
+     {\textbf{C++}, \textbf{Java}, \textbf{Javascript}, \textbf{Node.js}, Express.js, \textbf{Typescript}, Python, \textbf{React.js}, Redux, HTML, CSS, \textbf{Spring Boot}, \textbf{Microservices}, Unit Testing, \textbf{Data Structures \& Algorithms}, REST APIs, \textbf{MongoDB}, \textbf{PostgreSQL}, \textbf{AWS}, Docker, Postman, Git, Agile/Scrum, CI/CD, Design patterns, LLM, GenAI}
+    }
+ \resumeSubHeadingListEnd
+%-------------------------------------------
+%---------EDUCATION-----------
+\section{Education}
+\vspace{-4pt}
+
+\resumeEduSubheading
+  {Institute of Engineering and Technology DAVV}{Indore, Madhya Pradesh}
+  {BE in Electronics and Telecommunication Engineering; CGPA: 8}{2019 -- 2023}
+
+\vspace{4pt}
+
+\resumeEduSubheading
+  {Jawahar Lal Nehru School, BHEL}{Bhopal, Madhya Pradesh}
+  {12th Standard, CBSE; Percentage: 82}{2018}
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{HASHER - Kotlin, Firebase, JAVA, XML }
+      {Hasher is an Android Chatting application built to demonstrate the use of Modern Android development tools
+Kotlin, Android SDK Firebase. This is a real-time one-to-one chat application with Google authentication using a
+cloud-hosted NoSQL database that lets you store and sync data between your users in real-time.}
+    \resumeSubItem{Full Stack billing Web application - Java, Spring Boot, React.js}
+      {Developed a full-stack Billing Application using Spring Boot, Oracle Database, React.js, JavaScript, and CSS, featuring RESTful APIs, optimized database queries, and a responsive frontend for efficient billing management.}
+  \resumeSubHeadingListEnd
+  
+  %-----------PROJECTS-----------------
+
+
+%
+\end{document}
